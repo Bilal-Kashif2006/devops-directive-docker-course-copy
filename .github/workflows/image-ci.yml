@@ -19,7 +19,7 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: |
-            Bilal-Kashif2006/devops-directive-docker-course-copy-api-node:latest
+            Bilal-Kashif2006/devops-directive-docker-course-copy-api-node
           tags: |
             type=raw,value=latest
             type=ref,event=branch
