@@ -33,10 +33,10 @@ function CurrentTime(props) {
   )
 }
 
-export function App() {
+export function App(prop) {
   return (
     <QueryClientProvider client={queryClient}>
-      <h1>Hey Team! 👋</h1>
+      <h1>{prop.title} 👋</h1>
       <CurrentTime api="/api/golang/"/>
       <CurrentTime api="/api/node/"/>
       <ReactQueryDevtools initialIsOpen={false} />
